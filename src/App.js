@@ -35,8 +35,8 @@ function App() {
           <aside className="side-panel">
             {/* Conditions on displaying the sidebar based on user roles (if admin, if patient, if doctor) */}
             <SidebarAdmin></SidebarAdmin>
-            <SidebarPatient></SidebarPatient>
-            <SidebarDoctor></SidebarDoctor>
+            {/* <SidebarPatient></SidebarPatient>
+            <SidebarDoctor></SidebarDoctor> */}
 
           </aside>
           <main className="main-panel">
