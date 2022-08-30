@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form, Modal, Col, Row } from "react-bootstrap";
 
-import "./ModalPatient.scss";
+import "./ModalCaregiver.scss";
 
 const AppoinmentModal = () => {
   const [show, setShow] = useState(false);
@@ -25,7 +25,7 @@ const AppoinmentModal = () => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Vaccinate
+            Add Caregiver
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

@@ -10,7 +10,7 @@ import DashboardDoctor from './pages/Dashboard/DashboardDoctor';
 import DashboardPatient from './pages/Dashboard/DashboardPatient';
 
 import Header from './components/Header/Header';
-import ViewData from './components/PatientData/ViewData';
+import PatientData from './components/PatientData/PatientData';
 
 import AdminLogin from './pages/Login/AdminLogin';
 import PatientLogin from './pages/Login/PatientLogin';
@@ -34,9 +34,9 @@ function App() {
         <Router>
           <aside className="side-panel">
             {/* Conditions on displaying the sidebar based on user roles (if admin, if patient, if doctor) */}
-            <SidebarAdmin></SidebarAdmin>
-            {/* <SidebarPatient></SidebarPatient>
-            <SidebarDoctor></SidebarDoctor> */}
+            {/* <SidebarAdmin></SidebarAdmin> */}
+            <SidebarPatient></SidebarPatient>
+            {/* <SidebarDoctor></SidebarDoctor> */}
 
           </aside>
           <main className="main-panel">
@@ -48,7 +48,7 @@ function App() {
                 <Route path='/dashboard-patient' exact component={DashboardPatient} />
                 <Route path='/dashboard-doctor' exact component={DashboardDoctor} />
 
-                <Route path='/view-data' exact component={ViewData} />
+                <Route path='/view-data' exact component={PatientData} />
                 <Route path='/doctors-list' exact component={DoctorsList} />
                 <Route path='/patients-list' exact component={PatientsList} />
                 <Route path='/my-caregivers' exact component={CaregiversList} />

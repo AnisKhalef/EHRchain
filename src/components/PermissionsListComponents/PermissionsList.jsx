@@ -15,7 +15,7 @@ import {
   InputGroup,
   Pagination,
 } from "react-bootstrap";
-import AppoinmentModal from "../AppointmentsComponents/AppoinmentModal";
+import AddPermissionModal from "../ModalPermission/AddPermissionModal";
 
 const PermissionsList = () => {
   const [vaccinatedPeople, setVaccinatePeople] = useState([]);
@@ -82,7 +82,7 @@ const PermissionsList = () => {
                           <div className="vaccinated-appoinment--header">
                             <div className="row">
                               <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <AppoinmentModal></AppoinmentModal>
+                                <AddPermissionModal></AddPermissionModal>
                               </div>
                               <div className="offset-md-3 col-xs-12 col-sm-12 col-md-3 col-lg-3">
                                 <div className="vaccinate-appoinment--search">

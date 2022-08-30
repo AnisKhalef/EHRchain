@@ -54,7 +54,7 @@ const SidebarDoctor = () => {
                   <span>
                     <FaIcons.FaHome></FaIcons.FaHome>
                   </span>
-                  Dashboard
+                  Bio
                 </NavLink>
               </ContextAwareToggle>
             </Accordion>

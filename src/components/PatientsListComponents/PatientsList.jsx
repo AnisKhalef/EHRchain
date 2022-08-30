@@ -107,14 +107,12 @@ const PatientsList = () => {
                               <Table responsive striped bordered hover>
                                 <thead>
                                   <tr>
-                                    <th>#</th>
-                                    <th>Patient Name</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Image</th>
                                     <th>Email</th>
-                                    <th>Gender</th>
-                                    <th>Date</th>
-                                    <th>Phone</th>
-                                    <th>Doctor</th>
-                                    <th>Vaccine</th>
+                                    <th>Address</th>
+                                    <th>Phone Number</th>
                                     <th>Action</th>
                                   </tr>
                                 </thead>
@@ -125,12 +123,10 @@ const PatientsList = () => {
                                       <tr key={vaccinate.id}>
                                         <td>{vaccinate.id}</td>
                                         <td>{vaccinate.name}</td>
+                                        <td>{vaccinate.image}</td>
                                         <td>{vaccinate.email}</td>
-                                        <td>{vaccinate.gender}</td>
-                                        <td>{vaccinate.date}</td>
+                                        <td>{vaccinate.address}</td>
                                         <td>{vaccinate.phone}</td>
-                                        <td>{vaccinate.doctor}</td>
-                                        <td>{vaccinate.vaccine}</td>
                                         <td>
                                           <a
                                             className="edit-btn action-btn btn"

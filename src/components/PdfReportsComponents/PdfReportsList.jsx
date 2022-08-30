@@ -11,7 +11,6 @@ import {
   InputGroup,
   Pagination,
 } from "react-bootstrap";
-import AppoinmentModal from "../AppointmentsComponents/AppoinmentModal";
 
 const PdfReportsList = () => {
   const [vaccinatedPeople, setVaccinatePeople] = useState([]);
@@ -77,9 +76,7 @@ const PdfReportsList = () => {
                         <div className="vaccinate-appoinment__content">
                           <div className="vaccinated-appoinment--header">
                             <div className="row">
-                              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <AppoinmentModal></AppoinmentModal>
-                              </div>
+                              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
                               <div className="offset-md-3 col-xs-12 col-sm-12 col-md-3 col-lg-3">
                                 <div className="vaccinate-appoinment--search">
                                   <InputGroup className="mb-3">
