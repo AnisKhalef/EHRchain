@@ -44,7 +44,7 @@ function App() {
             <div className="container-fluid">
               <Switch>
 
-                <Route path='/dashboard-admin' exact component={DashboardAdmin} />
+                <Route path='/' exact component={DashboardAdmin} />
                 <Route path='/dashboard-patient' exact component={DashboardPatient} />
                 <Route path='/dashboard-doctor' exact component={DashboardDoctor} />
 
