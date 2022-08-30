@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import './App.scss';
-import SidebarPatient from './components/SidebarPatient/SidebarPatient';
 import SidebarAdmin from './components/SidebarAdmin/SidebarAdmin';
+import SidebarPatient from './components/SidebarPatient/SidebarPatient';
 import SidebarDoctor from './components/SidebarDoctor/SidebarDoctor';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -35,13 +35,19 @@ function App() {
           <aside className="side-panel">
             {/* Conditions on displaying the sidebar based on user roles (if admin, if patient, if doctor) */}
             <SidebarAdmin></SidebarAdmin>
+            <SidebarPatient></SidebarPatient>
+            <SidebarDoctor></SidebarDoctor>
+
           </aside>
           <main className="main-panel">
             <Header></Header>
             <div className="container-fluid">
               <Switch>
 
-                <Route path='/' exact component={DashboardAdmin} />
+                <Route path='/dashboard-admin' exact component={DashboardAdmin} />
+                <Route path='/dashboard-patient' exact component={DashboardPatient} />
+                <Route path='/dashboard-doctor' exact component={DashboardDoctor} />
+
                 <Route path='/view-data' exact component={ViewData} />
                 <Route path='/doctors-list' exact component={DoctorsList} />
                 <Route path='/patients-list' exact component={PatientsList} />
